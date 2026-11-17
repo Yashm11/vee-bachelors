@@ -171,9 +171,9 @@ table.cmp td.best{background:var(--accent);color:var(--accent-ink);font-weight:8
 <section class="panel" id="panel" hidden>
   <div class="wrap">
     <div class="grid">
-      <label class="ctl">Paying people<input type="number" id="nPay" min="1" max="20" value="7"></label>
+      <label class="ctl">Paying people<input type="number" id="nPay" min="1" max="20" value="8"></label>
       <div class="ctl">Food type<div class="seg"><button id="dVeg" aria-pressed="false">Veg</button><button id="dMix" aria-pressed="true">Mixed</button></div></div>
-      <label class="ctl">Adults eating<input type="number" id="nAd" min="0" max="30" value="9"></label>
+      <label class="ctl">Adults eating<input type="number" id="nAd" min="0" max="30" value="10"></label>
       <label class="ctl">Kids eating<input type="number" id="nKid" min="0" max="10" value="1"></label>
       <label class="ctl">Kid meal, % of adult<input type="number" id="kidPct" min="0" max="100" value="50"></label>
       <label class="ctl">Food days<input type="number" id="fDays" min="1" max="3" step="0.5" value="2"></label>
@@ -270,7 +270,7 @@ const STAYS=[
   imgs:[IMG.gul2,IMG.gul1],base:33267,tags:["5 bedrooms","4 bathrooms","Infinity pool","Pool table & foosball","Patio"],rating:"Rating not added",
   food:{kind:"order",note:"Cook or order in"},pos:[17,62],map:"Gulmohar The Vineyard Villas Igatpuri",flags:[]}
 ];
-const S={n:7,mix:true,incFood:false,view:"pp",ad:9,kid:1,kidPct:50,days:2,est:0,farmSite:false,add:{},sel:null,sug:[],votes:{},myPicks:{},pos:{},imgIdx:{}};
+const S={n:8,mix:true,incFood:false,view:"pp",ad:9,kid:1,kidPct:50,days:2,est:0,farmSite:false,add:{},sel:null,sug:[],votes:{},myPicks:{},pos:{},imgIdx:{}};
 const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>{try{const x=new URL(u);return(x.protocol==="https:"||x.protocol==="http:")?x.href:null}catch(e){return null}};
